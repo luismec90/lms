@@ -46,10 +46,10 @@ function getAPI()
 }
 
 function build() {
-    var a = Math.floor((Math.random() * (15 + 1)) + -5);
-    var b = Math.floor((Math.random() * (10 + 1)) + (a+1));
-    var c = Math.floor((Math.random() * (8 + 1)) + 1);
-    var e= Math.floor((Math.random() * (5 + 1)) + 1);
+    a = Math.floor((Math.random() * (15 + 1)) + -5);
+    b = Math.floor((Math.random() * (10 + 1)) + (a + 1));
+    c = Math.floor((Math.random() * (8 + 1)) + 1);
+    e = Math.floor((Math.random() * (5 + 1)) + 1);
     document.getElementById("value_b").innerHTML = a;
     document.getElementById("value_a").innerHTML = b;
     document.getElementById("value_c").innerHTML = c;
@@ -63,36 +63,62 @@ $(function() {
     API.LMSInitialize("");
 
     build();
+    var correctAnswer = (c * Math.pow(b, e + 1) / (e + 1)) - (c * Math.pow(a, e + 1) / (e + 1));
+    var missConception1 = (c * Math.pow(b, e + 1)) - (c * Math.pow(a, e + 1));
+    var missConception2 = (c * Math.pow(b, e + 1) / (e)) - (c * Math.pow(a, e + 1) / (e));
+    console.log(correctAnswer + " " + missConception1 + " " + missConception2);
+
     $("#verificar").click(function() {
-        var valor = $("#contenedor input[type='radio']:checked").val();
+        var valor = $("#answer").val();
         if (valor != undefined) {
             $("#correcto").addClass("hide");
             $("#feedback").addClass("hide");
-            var calificacion;
-            switch ($("#contenedor input[type='radio']:checked").val()) {
-                case "7":
-                    calificacion = 2.5;
-                    $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Probablemente se te olvido dividir por el 3").removeClass("hide");
+            var calificacion = 0;
 
-                    break;
-                case "3":
-                    calificacion = 0.0;
-                    $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Te recomendamos este <a href='http://www.youtube.com/watch?v=8QccEGEBBTM' target='_blank'>video</a> acerca de como integrar.").removeClass("hide");
+            valor = parseInt(valor);
 
-                    break;
-                case "2.67":
+            switch (valor) {
+                case correctAnswer:
                     calificacion = 5.0;
                     $("#correcto").html("Calificación: <b>" + calificacion + "</b>").removeClass("hide");
                     break;
-                case "none":
-                    calificacion = 0.0
+                case missConception1:
+                    calificacion = 2.5;
+                    $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Probablemente se te olvido dividir por " + (e + 1)).removeClass("hide");
+                    break;
+                case missConception2:
+                    calificacion = 2.5;
+                    $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Probablemente se te olvido sumar una unidad al divisor  <br> Te recomendamos este <a href='http://www.slideshare.net/zq0/reglas-basicas-de-integracion-25786244' target='_blank'>documento</a> donde podras repasar las reglas de integración.").removeClass("hide");
+                    break;
+                default:
+                    calificacion = 0.0;
                     $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Te recomendamos este <a href='http://www.youtube.com/watch?v=8QccEGEBBTM' target='_blank'>video</a> acerca de como integrar.").removeClass("hide");
                     break;
             }
-            $("#contenedor input[type='radio']").prop("disabled", "true");
-            $(this).attr("disabled", "true");
             API.LMSSetValue("cmi.core.score.raw", calificacion);
             API.LMSFinish("");
         }
     });
 });
+/*
+ switch ($("#contenedor input[type='radio']:checked").val()) {
+ case "7":
+ calificacion = 2.5;
+ $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Probablemente se te olvido dividir por el 3").removeClass("hide");
+ 
+ break;
+ case "3":
+ calificacion = 0.0;
+ $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Te recomendamos este <a href='http://www.youtube.com/watch?v=8QccEGEBBTM' target='_blank'>video</a> acerca de como integrar.").removeClass("hide");
+ 
+ break;
+ case "2.67":
+ calificacion = 5.0;
+ $("#correcto").html("Calificación: <b>" + calificacion + "</b>").removeClass("hide");
+ break;
+ case "none":
+ calificacion = 0.0
+ $("#feedback").html("Calificación: <b>" + calificacion + "</b> <br> Te recomendamos este <a href='http://www.youtube.com/watch?v=8QccEGEBBTM' target='_blank'>video</a> acerca de como integrar.").removeClass("hide");
+ break;
+ }
+ */
