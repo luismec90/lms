@@ -1,4 +1,4 @@
- findAPITries = 0;
+findAPITries = 0;
 
 function findAPI(win)
 {
@@ -6,7 +6,7 @@ function findAPI(win)
 // if the window (win) does not contain the API and
 // the window (win) has a parent window and the parent window
 // is not the same as the window (win)
-    while ((win.API == null) &&(win.parent != null) && (win.parent != win))
+    while ((win.API == null) && (win.parent != null) && (win.parent != win))
     {
 // increment the number of findAPITries
         findAPITries++;
@@ -31,7 +31,7 @@ function getAPI()
 // and the current window has an opener window
     if ((theAPI == null) &&
             (window.opener != null) &&
-            (typeof(window.opener) != "undefined"))
+            (typeof (window.opener) != "undefined"))
     {
 // try to find the API in the current window’s opener
         theAPI = findAPI(window.opener);
@@ -45,12 +45,24 @@ function getAPI()
     return theAPI;
 }
 
+function build() {
+    var a = Math.floor((Math.random() * (15 + 1)) + -5);
+    var b = Math.floor((Math.random() * (10 + 1)) + (a+1));
+    var c = Math.floor((Math.random() * (8 + 1)) + 1);
+    var e= Math.floor((Math.random() * (5 + 1)) + 1);
+    document.getElementById("value_b").innerHTML = a;
+    document.getElementById("value_a").innerHTML = b;
+    document.getElementById("value_c").innerHTML = c;
+    document.getElementById("value_e").innerHTML = e;
+}
+
+
 $(function() {
     API = getAPI();
 
     API.LMSInitialize("");
 
-
+    build();
     $("#verificar").click(function() {
         var valor = $("#contenedor input[type='radio']:checked").val();
         if (valor != undefined) {
@@ -79,7 +91,7 @@ $(function() {
             }
             $("#contenedor input[type='radio']").prop("disabled", "true");
             $(this).attr("disabled", "true");
-            API.LMSSetValue("cmi.core.score.raw",calificacion);
+            API.LMSSetValue("cmi.core.score.raw", calificacion);
             API.LMSFinish("");
         }
     });

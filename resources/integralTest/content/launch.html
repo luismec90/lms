@@ -16,6 +16,45 @@
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
+		#container{
+			position:relative;
+		}
+		#integral{
+			background-image:url('img/integral.png');
+			background-size:100%;
+			background-repeat:no-repeat;
+			width:40px;
+			height:64px;
+			position:absolute;
+			top:20px;
+		}
+		#value_a{
+			position:absolute;
+			left:40px;
+			top:10px;
+		}
+		#value_b{
+			position:absolute;
+			left:10px;
+			top:70px;
+		}
+		#value_function{
+			position:absolute;
+			left:40px;
+			top:30px;
+			font-size:30px;
+		}
+		#answer{
+			position:absolute;
+			left:145px;
+			top:47px;
+			border:1px solid #000;
+			width:50px;
+			height:30px;
+			text-align:center;
+                        line-height: 10px;
+		}
+	
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -42,22 +81,16 @@
             <div class="container">
                 <div id="correcto" class="alert alert-success hide">Respuesta correcta</div>
                 <div id="feedback" class="alert alert-warning hide"></div>
-                <h1>Quiz!</h1>¿Cuál es la integral de x^3/3 entre 1 y 2?
+                Cuál es la integral de:
 
-                <br>
-
-                <input type="radio" name="optionsRadios"  value="7">
-                7
-                <br>    
-                <input type="radio" name="optionsRadios" value="3">
-                3
-                <br> 
-                <input type="radio" name="optionsRadios" value="2.67">
-                2.67
-                <br> 
-                <input type="radio" name="optionsRadios" value="none">
-                Ninguna de las anteriores
-                <br> 
+                <div id="container">
+                    <div id="integral"></div>
+                    <div id="value_a">a</div>
+                    <div id="value_b">b</div>
+                    <div id="value_function"><span id="value_c">c</span><span id="value_x"><i>x</i></span><sup><span id="value_e">e</span></sup><span id="value_dx"><i>dx</i></span> =</div>
+                    <input id="answer" type="text">
+                </div>
+                <br>  <br> <br>
                 <a id="verificar" class="btn btn-primary">Enviar</a>
             </div>
         </div>
