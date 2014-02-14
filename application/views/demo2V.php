@@ -10,7 +10,7 @@
         <!-- basic styles -->
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.css" />
 
         <!--[if IE 7]>
           <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
@@ -55,7 +55,7 @@
                 <div class="navbar-header pull-left">
                     <a href="#" class="navbar-brand">
                         <small>
-                            <i class="icon-trophy"></i>
+                            <i class="fa fa-trophy fa-lg"></i>
                             Plataforma Educativa
                         </small>
                     </a><!-- /.brand -->
@@ -65,7 +65,7 @@
                     <ul class="nav ace-nav">
                         <li class="grey">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <i class="icon-tasks"></i>
+                                <i class="icon-position fa fa-tasks fa-lg"></i>
                                 <span class="badge badge-grey">4</span>
                             </a>
 
@@ -138,7 +138,7 @@
 
                         <li class="purple">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <i class="icon-bell-alt icon-animated-bell"></i>
+                                <i class="icon-position fa fa-bell fa-lg icon-animated-bell"></i>
                                 <span class="badge badge-important">8</span>
                             </a>
 
@@ -202,7 +202,7 @@
 
                         <li class="green">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <i class="icon-envelope icon-animated-vertical"></i>
+                                <i class="icon-position fa fa-envelope fa-lg icon-animated-vertical"></i>
                                 <span class="badge badge-success">5</span>
                             </a>
 
@@ -324,77 +324,90 @@
                 <div class="sidebar" id="sidebar">
 
 
-                    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-                        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                            <button class="btn btn-success">
-                                <i class="icon-signal"></i>
-                            </button>
-
-                            <button class="btn btn-info">
-                                <i class="icon-pencil"></i>
-                            </button>
-
-                            <button class="btn btn-warning">
-                                <i class="icon-group"></i>
-                            </button>
-
-                            <button class="btn btn-danger">
-                                <i class="icon-cogs"></i>
-                            </button>
-                        </div>
-
-                        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                            <span class="btn btn-success"></span>
-
-                            <span class="btn btn-info"></span>
-
-                            <span class="btn btn-warning"></span>
-
-                            <span class="btn btn-danger"></span>
-                        </div>
-                    </div><!-- #sidebar-shortcuts -->
+                    <!--                    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                                            <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                                                <button class="btn btn-success">
+                                                    <i class="icon-signal"></i>
+                                                </button>
+                    
+                                                <button class="btn btn-info">
+                                                    <i class="icon-pencil"></i>
+                                                </button>
+                    
+                                                <button class="btn btn-warning">
+                                                    <i class="icon-group"></i>
+                                                </button>
+                    
+                                                <button class="btn btn-danger">
+                                                    <i class="icon-cogs"></i>
+                                                </button>
+                                            </div>
+                    
+                                            <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                                                <span class="btn btn-success"></span>
+                    
+                                                <span class="btn btn-info"></span>
+                    
+                                                <span class="btn btn-warning"></span>
+                    
+                                                <span class="btn btn-danger"></span>
+                                            </div>
+                                        </div> #sidebar-shortcuts -->
 
                     <ul class="nav nav-list">
                         <li class="active">
                             <a href="index.html">
-                                <i class="icon-dashboard"></i>
-                                <span class="menu-text"> Dashboard </span>
+                             <i class="icon-position fa fa-book fa-lg"></i> 
+                                <span class="menu-text"> Cálculo Diferencial </span>
                             </a>
                         </li>
 
                         <li>
                             <a href="typography.html">
-                                <i class="icon-text-width"></i>
-                                <span class="menu-text"> Typography </span>
+                                <i class="icon-position fa fa-bullhorn fa-lg"></i>
+                                <span class="menu-text"> Anuncios </span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-desktop"></i>
-                                <span class="menu-text"> UI Elements </span>
+                            <a href="typography.html">
+                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <span class="menu-text"> Introducción </span>
+                            </a>
+                        </li>
 
-                                <b class="arrow icon-angle-down"></b>
+                        <li>
+                            <a href="typography.html">
+                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <span class="menu-text"> Videos </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <span class="menu-text"> Meterial </span>
+
+                                <b class="arrow fa fa-angle-down fa-lg"></b>
                             </a>
 
                             <ul class="submenu">
                                 <li>
                                     <a href="elements.html">
-                                        <i class="icon-double-angle-right"></i>
+                                        <i class="icon-position fa fa-desktop fa-lg"></i>
                                         Elements
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="buttons.html">
-                                        <i class="icon-double-angle-right"></i>
+                                       <i class="icon-position fa fa-desktop fa-lg"></i>
                                         Buttons &amp; Icons
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="treeview.html">
-                                        <i class="icon-double-angle-right"></i>
+                                         <i class="icon-position fa fa-desktop fa-lg"></i>
                                         Treeview
                                     </a>
                                 </li>
@@ -461,7 +474,7 @@
                         <li>
                             <a href="#" class="dropdown-toggle">
                                 <i class="icon-list"></i>
-                                <span class="menu-text"> Tables </span>
+                                <span class="menu-text"> Evaluaciones </span>
 
                                 <b class="arrow icon-angle-down"></b>
                             </a>
@@ -486,7 +499,7 @@
                         <li>
                             <a href="#" class="dropdown-toggle">
                                 <i class="icon-edit"></i>
-                                <span class="menu-text"> Forms </span>
+                                <span class="menu-text"> Foro </span>
 
                                 <b class="arrow icon-angle-down"></b>
                             </a>
@@ -522,19 +535,14 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="widgets.html">
-                                <i class="icon-list-alt"></i>
-                                <span class="menu-text"> Widgets </span>
-                            </a>
-                        </li>
+
 
                         <li>
                             <a href="calendar.html">
                                 <i class="icon-calendar"></i>
 
                                 <span class="menu-text">
-                                    Calendar
+                                    Calendario
                                     <span class="badge badge-transparent tooltip-error" title="" data-original-title="2&nbsp;Important&nbsp;Events">
                                         <i class="icon-warning-sign red bigger-130"></i>
                                     </span>
@@ -542,17 +550,12 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="gallery.html">
-                                <i class="icon-picture"></i>
-                                <span class="menu-text"> Gallery </span>
-                            </a>
-                        </li>
+
 
                         <li>
                             <a href="#" class="dropdown-toggle">
                                 <i class="icon-tag"></i>
-                                <span class="menu-text"> More Pages </span>
+                                <span class="menu-text"> Recursos externos </span>
 
                                 <b class="arrow icon-angle-down"></b>
                             </a>
@@ -602,77 +605,16 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-file-alt"></i>
 
-                                <span class="menu-text">
-                                    Other Pages
-                                    <span class="badge badge-primary ">5</span>
-                                </span>
-
-                                <b class="arrow icon-angle-down"></b>
-                            </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="faq.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        FAQ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="error-404.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Error 404
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="error-500.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Error 500
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="grid.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Grid
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="blank.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Blank Page
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul><!-- /.nav-list -->
 
                     <div class="sidebar-collapse" id="sidebar-collapse">
-                        <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+                        <i class="icon-double-angle-left fa fa-angle-double-left fa-lg" data-icon1="icon-double-angle-left fa fa-angle-double-left fa-lg" data-icon2="icon-double-angle-right fa fa-angle-double-right fa-lg"></i>
                     </div>
-
-                    <script type="text/javascript">
-                        try {
-                            ace.settings.check('sidebar', 'collapsed')
-                        } catch (e) {
-                        }
-                    </script>
                 </div>
 
                 <div class="main-content">
                     <div class="breadcrumbs" id="breadcrumbs">
-                        <script type="text/javascript">
-                            try {
-                                ace.settings.check('breadcrumbs', 'fixed')
-                            } catch (e) {
-                            }
-                        </script>
 
                         <ul class="breadcrumb">
                             <li>
@@ -686,7 +628,7 @@
                             <form class="form-search">
                                 <span class="input-icon">
                                     <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
-                                    <i class="icon-search nav-search-icon"></i>
+                                    <i class="icon-search nav-search-icon fa fa-search"></i>
                                 </span>
                             </form>
                         </div><!-- #nav-search -->
@@ -705,61 +647,130 @@
 
 
                         <div class="row">
-                            <div id="video-container">
-                                <!-- Video -->
-                                <video id="video" width="640" height="365">
-          
-                                    <source src="assets/videos/mikethefrog.mp4  " type="video/mp4">
-                                    <p>
-                                        Your browser doesn't support HTML5 video.
-                                        <a href="assets/videos/mikethefrog.mp4">Download</a> the video instead.
-                                    </p>
-                                </video>
+
+                            <div id="video-container" class="video videoframe ui-resizable show">
                                 <!-- Video Controls -->
-                                <div id="video-controls">
-                                    <span  id="play-pause" class="play"></span>
-                                    <input type="range" id="seek-bar" value="0">
-                                    <button type="button" id="mute">Mute</button>
-                                    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                                    <button type="button" id="full-screen">Full-Screen</button>
+                                <div class="max">
+                                    <div class="mejs-container svg mejs-video">
+                                        <div class="mejs-inner">
+                                            <div class="mejs-mediaelement">
+                                                <video width="650" height="365" src="assets/videos/mikethefrog.mp4" style="width: 100%; height: 100%;">
+
+                                                    <source src="assets/videos/mikethefrog.mp4" type="video/mp4">
+                                                    <p>
+                                                        Your browser doesn't support HTML5 video.
+                                                        <a href="assets/videos/mikethefrog.mp4">Download</a> the video instead.
+                                                    </p>
+
+
+                                                </video>
+                                            </div>
+                                            <div  class="mejs-controls" style="">
+
+                                                <div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0" title="Play/Pause" aria-label="Play/Pause"></button>
+                                                </div>
+
+                                                <div class="mejs-time mejs-currenttime-container">
+
+                                                    <span class="mejs-currenttime">00:02
+                                                    </span>
+                                                </div>
+
+                                                <div class="mejs-time-rail" style="width: 390px;">
+
+                                                    <span class="mejs-time-total" style="width: 390px;">
+
+                                                        <span class="mejs-time-buffering" style="display: none;">
+                                                        </span>
+
+                                                        <span class="mejs-time-loaded" style="width: 347.99999091909604px;">
+                                                        </span>
+
+                                                        <span class="mejs-time-current" style="width: 8px;">
+                                                        </span>
+
+                                                        <span class="mejs-time-handle" style="left: 5px;">
+                                                        </span>
+
+                                                        <span class="mejs-time-float" style="display: none; left: 251px;">
+
+                                                            <span class="mejs-time-float-current">01:07
+                                                            </span>
+
+                                                            <span class="mejs-time-float-corner">
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+
+                                                <div class="mejs-time mejs-duration-container">
+
+                                                    <span class="mejs-duration">01:33
+                                                    </span>
+                                                </div>
+
+                                                <div class="mejs-button mejs-playbackspeed-button">
+
+                                                    <div class="mejs-playbackspeed-label" title="Playback Speed" aria-label="Playback Speed">1x
+                                                    </div>
+
+                                                    <div class="mejs-playbackspeed-selector mejs-list-selector" style="height: 190px; visibility: hidden;">
+                                                        <ul>
+                                                            <li class="title">Velocidad de video</li>
+                                                            <li data-name="2x_playbackrate" data-rate="2" data-label="2x">2x</li>
+                                                            <li data-name="1.75x_playbackrate" data-rate="1.75" data-label="1.75x">1.75x</li>
+                                                            <li data-name="1.5x_playbackrate" data-rate="1.5" data-label="1.5x">1.5x</li>
+                                                            <li data-name="1.25x_playbackrate" data-rate="1.25" data-label="1.25x">1.25x</li>
+                                                            <li data-name="1x_playbackrate" data-rate="1" data-label="1x" class="selected">1x</li>
+                                                            <li data-name="0.75x_playbackrate" data-rate="0.75" data-label="0.75x">0.75x</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0" title="Mute Toggle" aria-label="Mute Toggle"></button>
+
+                                                    <div class="mejs-volume-slider" style="display: none;">
+
+                                                        <div class="mejs-volume-total">
+                                                        </div>
+
+                                                        <div class="mejs-volume-current" style="height: 48px; top: 22px;">
+                                                        </div>
+
+                                                        <div class="mejs-volume-handle" style="top: 20px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-
-
-
-
-
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.page-content -->
         </div><!-- /.main-content -->
-
-
-    </div><!-- /.main-container-inner -->
-
-    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-        <i class="icon-double-angle-up icon-only bigger-110"></i>
-    </a>
-</div>
-<!-- basic scripts -->
-<!--[if !IE]> -->
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
-</script>
-<!-- <![endif]-->
-<!--[if IE]>
-<script type="text/javascript">
-window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
-<script src="assets/js/bootstrap.min.js"></script>
-<!-- page specific plugin scripts -->
-<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-<!-- ace scripts -->
-<script src="assets/js/ace.min.js"></script>
-<script src="assets/js/global.js"></script>
-</body>
+        <!-- basic scripts -->
+        <!--[if !IE]> -->
+        <script type="text/javascript">
+            window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+        </script>
+        <!-- <![endif]-->
+        <!--[if IE]>
+        <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+        </script>
+        <![endif]-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- page specific plugin scripts -->
+        <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <!-- ace scripts -->
+        <script src="assets/js/ace.min.js"></script>
+        <script src="assets/js/global.js"></script>
+    </body>
 </html>
