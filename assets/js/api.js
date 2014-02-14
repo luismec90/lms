@@ -2,7 +2,7 @@ API = new Object();
 API.LMSInitialize = function(a) {
     $.ajax({
         url: "../api/LMSInitialize",
-        method:"post",
+        method: "post",
         data: {
             param1: a
         },
@@ -14,7 +14,7 @@ API.LMSInitialize = function(a) {
 API.LMSFinish = function(a) {
     $.ajax({
         url: "../api/LMSFinish",
-        method:"post",
+        method: "post",
         data: {
             param1: a
         },
@@ -23,17 +23,16 @@ API.LMSFinish = function(a) {
         }
     });
 }
-API.LMSSetValue = function(a,b) {
+API.LMSSetValue = function(a, b) {
     $.ajax({
         url: "../api/LMSSetValue",
-        method:"post",
+        method: "post",
         data: {
-            param1:a,
-            param2:b
+            param1: a,
+            param2: b
         },
         success: function(data) {
             console.log(data);
         }
     });
 }
-
