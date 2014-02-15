@@ -259,21 +259,20 @@
                                     <small>Bienvenido,</small>
                                     Luis Fernando
                                 </span>
-
                                 <i class="icon-caret-down"></i>
                             </a>
 
                             <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                                 <li>
                                     <a href="#">
-                                        <i class="icon-cog"></i>
+                                        <i class="icon-old fa fa-cogs fa-lg"></i>
                                         Configuración
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <i class="icon-user"></i>
+                                          <i class="icon-old fa fa-user"></i>
                                         Pefil
                                     </a>
                                 </li>
@@ -282,7 +281,7 @@
 
                                 <li>
                                     <a href="#">
-                                        <i class="icon-off"></i>
+                                        <i class="icon-old fa fa-power-off fa-lg"></i>
                                         Salir
                                     </a>
                                 </li>
@@ -348,24 +347,22 @@
                                 <span class="menu-text"> Anuncios </span>
                             </a>
                         </li>
-
                         <li>
                             <a href="typography.html">
-                                <i class="icon-position fa fa-desktop fa-lg"></i>
-                                <span class="menu-text"> Introducción </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="typography.html">
-                                <i class="icon-position fa fa-desktop fa-lg"></i>
-                                <span class="menu-text"> Videos </span>
+                                <i class="icon-position fa fa-info fa-lg"></i>
+                                <span class="menu-text"> Información del curso </span>
                             </a>
                         </li>
                         <li>
+                            <a href="typography.html">
+                                <i class="icon-position fa fa-th-list fa-lg"></i>
+                                <span class="menu-text"> Contenido </span>
+                            </a>
+                        </li>
+                             <li>
                             <a href="#" class="dropdown-toggle">
-                                <i class="icon-position fa fa-desktop fa-lg"></i>
-                                <span class="menu-text"> Meterial </span>
+                                <i class="icon-position fa fa-briefcase fa-lg"></i>
+                                <span class="menu-text"> Recursos </span>
 
                                 <b class="arrow fa fa-angle-down fa-lg"></b>
                             </a>
@@ -450,11 +447,18 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="typography.html">
+                                <i class="icon-position fa fa-rocket fa-lg"></i>
+                                <span class="menu-text"> Evaluaciones </span>
+                            </a>
+                        </li>
+                   
 
                         <li>
                             <a href="#" class="dropdown-toggle">
-                                <i class="icon-list"></i>
-                                <span class="menu-text"> Evaluaciones </span>
+                                 <i class="icon-position fa fa-comments-o fa-lg"></i>
+                                <span class="menu-text"> Foro </span>
 
                                 <b class="arrow icon-angle-down"></b>
                             </a>
@@ -476,65 +480,14 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-edit"></i>
-                                <span class="menu-text"> Foro </span>
+                  
 
-                                <b class="arrow icon-angle-down"></b>
-                            </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="form-elements.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Form Elements
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="form-wizard.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Wizard &amp; Validation
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="wysiwyg.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Wysiwyg &amp; Markdown
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="dropzone.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Dropzone File Upload
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-
-                        <li>
-                            <a href="calendar.html">
-                                <i class="icon-calendar"></i>
-
-                                <span class="menu-text">
-                                    Calendario
-                                    <span class="badge badge-transparent tooltip-error" title="" data-original-title="2&nbsp;Important&nbsp;Events">
-                                        <i class="icon-warning-sign red bigger-130"></i>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
 
 
 
                         <li>
                             <a href="#" class="dropdown-toggle">
-                                <i class="icon-tag"></i>
+                                 <i class="icon-position fa fa-globe fa-lg"></i>
                                 <span class="menu-text"> Recursos externos </span>
 
                                 <b class="arrow icon-angle-down"></b>
@@ -599,18 +552,18 @@
                     <div class="page-content">
                         <div class="page-header">
                             <h1>
-                                 Cálculo Diferencial 
+                                Cálculo Diferencial 
                                 <small>
                                     <i class="fa fa-angle-right fa-lg"></i>
-                                   Videos
+                                    Videos
                                 </small>
                             </h1>
                         </div><!-- /.page-header -->
                         <div class="row-fluid">
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -637,10 +590,10 @@
                                 </li>
 
                             </ul>
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -667,10 +620,10 @@
                                 </li>
 
                             </ul>
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
-                                <li>
-                                    <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                            <ul class="ace-thumbnails col-xs-4">
+                                <li >
+                                    <div >
+                                        <img src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -699,10 +652,10 @@
                             </ul>
                         </div>
                         <div class="row-fluid">
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -729,10 +682,10 @@
                                 </li>
 
                             </ul>
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -759,10 +712,10 @@
                                 </li>
 
                             </ul>
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
@@ -790,16 +743,16 @@
 
                             </ul>
                         </div>
-                           <div class="row-fluid">
-                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                        <div class="row-fluid">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
 
-                                          
+
                                                 <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
                                                     <i class="icon-zoom-in"></i>
                                                 </a>
@@ -815,21 +768,21 @@
                                         </div>
                                     </div>
                                     <h3><a href="#project-link">Limites</a>
-                                </h3>
-                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
-                  
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
                                 </li>
-                                 
+
                             </ul>
-                                   <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
 
-                                          
+
                                                 <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
                                                     <i class="icon-zoom-in"></i>
                                                 </a>
@@ -845,21 +798,21 @@
                                         </div>
                                     </div>
                                     <h3><a href="#project-link">Limites</a>
-                                </h3>
-                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
-                  
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
                                 </li>
-                                 
+
                             </ul>
-                                   <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                            <ul class="ace-thumbnails col-xs-4">
                                 <li>
                                     <div>
-                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <img  src="assets/img/julio_profe.jpg">
                                         <div class="text">
                                             <div class="inner">
                                                 <span></span>
 
-                                          
+
                                                 <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
                                                     <i class="icon-zoom-in"></i>
                                                 </a>
@@ -875,11 +828,11 @@
                                         </div>
                                     </div>
                                     <h3><a href="#project-link">Limites</a>
-                                </h3>
-                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
-                  
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
                                 </li>
-                                 
+
                             </ul>
                         </div>
                         <!-- PAGE CONTENT ENDS -->

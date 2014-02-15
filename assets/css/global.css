@@ -26,3 +26,6 @@
     border-image-outset: initial;
     border-image-repeat: initial;
 }
+.ace-thumbnails img{
+    width: 100%;
+}
