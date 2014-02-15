@@ -1,9 +1,20 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
 
 class Inicio extends CI_Controller {
 
-	public function index()
-	{
-		$this->load->view('iniciov');
-	}
+    public function index() {
+        $data = array();
+        $this->loadData($data);
+        $this->load->view('header',$data);
+        $this->load->view('inicioV');
+        $this->load->view('footer');
+    }
+
+    public function loadData(&$data) {
+        $data["tab"] = "inicio";
+    }
+
 }

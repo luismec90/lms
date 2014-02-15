@@ -6,7 +6,9 @@ if (!defined('BASEPATH'))
 class Demo extends CI_Controller {
 
     public function index() {
-        $this->load->view('demo2V');
+        $this->load->view('header');
+        $this->load->view('inicioV');
+        $this->load->view('footer');
     }
 
 }
