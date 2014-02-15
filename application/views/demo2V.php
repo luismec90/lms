@@ -3,44 +3,24 @@
     <head>
         <meta charset="utf-8" />
         <title>Dashboard - Ace Admin</title>
-
         <meta name="description" content="overview &amp; stats" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- basic styles -->
-
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/font-awesome.css" />
-
         <!--[if IE 7]>
           <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
         <![endif]-->
-
-        <!-- page specific plugin styles -->
-
-        <!-- fonts -->
-
         <link rel="stylesheet" href="assets/css/ace-fonts.css" />
-
-        <!-- ace styles -->
-
         <link rel="stylesheet" href="assets/css/ace.min.css" />
         <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
         <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
         <link rel="stylesheet" href="assets/css/global.css" />
-
         <!--[if lte IE 8]>
           <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
         <![endif]-->
-
         <!-- inline styles related to this page -->
-
         <!-- ace settings handler -->
-
         <script src="assets/js/ace-extra.min.js"></script>
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.js"></script>
         <script src="assets/js/respond.min.js"></script>
@@ -357,7 +337,7 @@
                     <ul class="nav nav-list">
                         <li class="active">
                             <a href="index.html">
-                             <i class="icon-position fa fa-book fa-lg"></i> 
+                                <i class="icon-position fa fa-book fa-lg"></i> 
                                 <span class="menu-text"> Cálculo Diferencial </span>
                             </a>
                         </li>
@@ -371,20 +351,20 @@
 
                         <li>
                             <a href="typography.html">
-                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <i class="icon-position fa fa-desktop fa-lg"></i>
                                 <span class="menu-text"> Introducción </span>
                             </a>
                         </li>
 
                         <li>
                             <a href="typography.html">
-                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <i class="icon-position fa fa-desktop fa-lg"></i>
                                 <span class="menu-text"> Videos </span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="dropdown-toggle">
-                               <i class="icon-position fa fa-desktop fa-lg"></i>
+                                <i class="icon-position fa fa-desktop fa-lg"></i>
                                 <span class="menu-text"> Meterial </span>
 
                                 <b class="arrow fa fa-angle-down fa-lg"></b>
@@ -400,14 +380,14 @@
 
                                 <li>
                                     <a href="buttons.html">
-                                       <i class="icon-position fa fa-desktop fa-lg"></i>
+                                        <i class="icon-position fa fa-desktop fa-lg"></i>
                                         Buttons &amp; Icons
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="treeview.html">
-                                         <i class="icon-position fa fa-desktop fa-lg"></i>
+                                        <i class="icon-position fa fa-desktop fa-lg"></i>
                                         Treeview
                                     </a>
                                 </li>
@@ -614,147 +594,300 @@
                 </div>
 
                 <div class="main-content">
-                    <div class="breadcrumbs" id="breadcrumbs">
 
-                        <ul class="breadcrumb">
-                            <li>
-                                <i class="icon-home home-icon"></i>
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="active">Dashboard</li>
-                        </ul><!-- .breadcrumb -->
-
-                        <div class="nav-search" id="nav-search">
-                            <form class="form-search">
-                                <span class="input-icon">
-                                    <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
-                                    <i class="icon-search nav-search-icon fa fa-search"></i>
-                                </span>
-                            </form>
-                        </div><!-- #nav-search -->
-                    </div>
 
                     <div class="page-content">
                         <div class="page-header">
                             <h1>
-                                Dashboard
+                                 Cálculo Diferencial 
                                 <small>
-                                    <i class="icon-double-angle-right"></i>
-                                    overview &amp; stats
+                                    <i class="fa fa-angle-right fa-lg"></i>
+                                   Videos
                                 </small>
                             </h1>
                         </div><!-- /.page-header -->
+                        <div class="row-fluid">
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
 
 
-                        <div class="row">
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
 
-                            <div id="video-container" class="video videoframe ui-resizable show">
-                                <!-- Video Controls -->
-                                <div class="max">
-                                    <div class="mejs-container svg mejs-video">
-                                        <div class="mejs-inner">
-                                            <div class="mejs-mediaelement">
-                                                <video width="650" height="365" src="assets/videos/mikethefrog.mp4" style="width: 100%; height: 100%;">
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
 
-                                                    <source src="assets/videos/mikethefrog.mp4" type="video/mp4">
-                                                    <p>
-                                                        Your browser doesn't support HTML5 video.
-                                                        <a href="assets/videos/mikethefrog.mp4">Download</a> the video instead.
-                                                    </p>
-
-
-                                                </video>
-                                            </div>
-                                            <div  class="mejs-controls" style="">
-
-                                                <div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0" title="Play/Pause" aria-label="Play/Pause"></button>
-                                                </div>
-
-                                                <div class="mejs-time mejs-currenttime-container">
-
-                                                    <span class="mejs-currenttime">00:02
-                                                    </span>
-                                                </div>
-
-                                                <div class="mejs-time-rail" style="width: 390px;">
-
-                                                    <span class="mejs-time-total" style="width: 390px;">
-
-                                                        <span class="mejs-time-buffering" style="display: none;">
-                                                        </span>
-
-                                                        <span class="mejs-time-loaded" style="width: 347.99999091909604px;">
-                                                        </span>
-
-                                                        <span class="mejs-time-current" style="width: 8px;">
-                                                        </span>
-
-                                                        <span class="mejs-time-handle" style="left: 5px;">
-                                                        </span>
-
-                                                        <span class="mejs-time-float" style="display: none; left: 251px;">
-
-                                                            <span class="mejs-time-float-current">01:07
-                                                            </span>
-
-                                                            <span class="mejs-time-float-corner">
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </div>
-
-                                                <div class="mejs-time mejs-duration-container">
-
-                                                    <span class="mejs-duration">01:33
-                                                    </span>
-                                                </div>
-
-                                                <div class="mejs-button mejs-playbackspeed-button">
-
-                                                    <div class="mejs-playbackspeed-label" title="Playback Speed" aria-label="Playback Speed">1x
-                                                    </div>
-
-                                                    <div class="mejs-playbackspeed-selector mejs-list-selector" style="height: 190px; visibility: hidden;">
-                                                        <ul>
-                                                            <li class="title">Velocidad de video</li>
-                                                            <li data-name="2x_playbackrate" data-rate="2" data-label="2x">2x</li>
-                                                            <li data-name="1.75x_playbackrate" data-rate="1.75" data-label="1.75x">1.75x</li>
-                                                            <li data-name="1.5x_playbackrate" data-rate="1.5" data-label="1.5x">1.5x</li>
-                                                            <li data-name="1.25x_playbackrate" data-rate="1.25" data-label="1.25x">1.25x</li>
-                                                            <li data-name="1x_playbackrate" data-rate="1" data-label="1x" class="selected">1x</li>
-                                                            <li data-name="0.75x_playbackrate" data-rate="0.75" data-label="0.75x">0.75x</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0" title="Mute Toggle" aria-label="Mute Toggle"></button>
-
-                                                    <div class="mejs-volume-slider" style="display: none;">
-
-                                                        <div class="mejs-volume-total">
-                                                        </div>
-
-                                                        <div class="mejs-volume-current" style="height: 48px; top: 22px;">
-                                                        </div>
-
-                                                        <div class="mejs-volume-handle" style="top: 20px;">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen"></button>
-                                                </div>
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="row-fluid">
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                    </h3>
+                                    <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                           <div class="row-fluid">
+                            <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+                                          
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                </h3>
+                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+                  
+                                </li>
+                                 
+                            </ul>
+                                   <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+                                          
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                </h3>
+                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+                  
+                                </li>
+                                 
+                            </ul>
+                                   <ul class="ace-thumbnails col-lg-3 col-md-4 col-sm-6">
+                                <li>
+                                    <div>
+                                        <img width="100%" height="100%" alt="150x150" src="assets/img/julio_profe.jpg">
+                                        <div class="text">
+                                            <div class="inner">
+                                                <span></span>
+
+                                          
+                                                <a href="assets/img/julio_profe.jpg" data-rel="colorbox" class="cboxElement">
+                                                    <i class="icon-zoom-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="fa fa-play fa-4x"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                    <i class="icon-share-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3><a href="#project-link">Limites</a>
+                                </h3>
+                                <p>En este video aprenderas los conceptos básicos de los limites, también contiene varios ejercicios explicados paso a paso </p>
+                  
+                                </li>
+                                 
+                            </ul>
                         </div>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.page-content -->
         </div><!-- /.main-content -->
+
         <!-- basic scripts -->
         <!--[if !IE]> -->
         <script type="text/javascript">
@@ -772,5 +905,6 @@
         <!-- ace scripts -->
         <script src="assets/js/ace.min.js"></script>
         <script src="assets/js/global.js"></script>
+
     </body>
 </html>
