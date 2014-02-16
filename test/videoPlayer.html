@@ -1,72 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Video Player</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <style>
-            #coverDisplay{
-                position: fixed;
-                top: 0;
-                left: 0;
-                background: #444;
-                background: rgba(68,68,68,0.8);
-                overflow: hidden;
-                filter: alpha(opacity=0);
-                opacity: 0;
-                z-index: 900;
-                width:100%;
-                height:100%;
-                opacity:1;
-            }
-            #video-container{
-                position: absolute;
-                top:40px;
-                left: 50%;
-                margin-left: -480px;
-                z-index: 1600;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Video Player</h1>
-        <div id="video-container">
-            <video id="video" width="960" height="540">
-                <source src="../assets/videos/mikethefrog.webm" type="video/webm">
-                <source src="../assets/videos/mikethefrog.ogv" type="video/ogv">
-                <source src="../assets/videos/mikethefrog.mp4" type="video/mp4">
-                <p>
-                    Your browser doesn't support HTML5 video.
-                    <a href="../assets/videos/mikethefrog.mp4">Download</a> the video instead.
-                </p>
-            </video>
-            <!-- Video Controls -->
-            <div id="video-controls">
-                <button type="button" id="play-pause" class="play">Play</button>
-                <input type="range" id="seek-bar" value="0">
-                <button type="button" id="mute">Mute</button>
-                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                <button type="button" id="full-screen">Full-Screen</button>
-            </div>
-        </div>
-        <div id="coverDisplay">
-        </div>
-    </body>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script>
-        $(function() {
-            var video = document.getElementById("video");
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML5 MediaElement</title>	
+	
+	<script src="../assets/js/jquery-2.0.3.min.js"></script>	
+	<script src="../assets/plugins/mediaElement/mediaelement-and-player.min.js"></script>
+	<script src="../assets/plugins/mediaElement/testforfiles.js"></script>	
+	<link rel="stylesheet" href="../assets/plugins/mediaElement/mediaelementplayer.css" />
+</head>
+<body>
 
-            $("#play-pause").click(function() {
-                if (video.paused == true) {
-                    video.play();
 
-         //           playButton.innerHTML = "Pause";
-                } else {
-                    video.pause();
 
-             //       playButton.innerHTML = "Play";
-                }
-            });
-        });
-    </script>
+<video width="640" height="360" src="../assets/videos/mikethefrog.mp4" type="video/mp4" 
+	id="player1" poster="../media/echo-hereweare.jpg" 
+	controls="controls" preload="none"></video>
+
+
+<script>
+
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+
+
+
+</body>
 </html>

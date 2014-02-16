@@ -14,6 +14,10 @@
         <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
         <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
         <link rel="stylesheet" href="assets/css/global.css" />
+
+        <link rel="stylesheet" href="assets/plugins/mediaElement/mediaelementplayer.css" />
+
+
         <!--[if lte IE 8]>
           <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
         <![endif]-->
@@ -365,7 +369,7 @@
                                 </li>
                             </ul>
                         </li>
-                         <li class="<?= ($tab == "evaluaciones") ? "active" : "" ?>">
+                        <li class="<?= ($tab == "evaluaciones") ? "active" : "" ?>">
                             <a href="evaluaciones">
                                 <i class="icon-position fa fa-rocket fa-lg"></i>
                                 <span class="menu-text"> Evaluaciones </span>

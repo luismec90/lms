@@ -224,13 +224,16 @@
     </div>
 </div>
 
-<div id="contenedor-video" class="hide">
+<div id="contenedor-video" class="hide ">
     <div id="botonCerrarVideo">
-   <i class="fa fa-times fa-2x"></i> 
+        <i class="fa fa-times fa-2x"></i> 
+    </div>
+    <video id="video" width="900" height="510" src="assets/videos/mikethefrog.mp4" type="video/mp4" 
+           id="player1" 
+           controls="controls" preload="none"></video>
+
 </div>
-    <video id="video" controls="" >
-        <source src="assets/videos/mikethefrog.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+
+
+
 

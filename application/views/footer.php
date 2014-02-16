@@ -21,6 +21,8 @@ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+
 <!-- ace scripts -->
 <script src="assets/js/jquery.easy-pie-chart.min.js"></script>
 <script src="assets/js/ace.min.js"></script>
+<script src="assets/plugins/mediaElement/mediaelement-and-player.js"></script>
+<script src="assets/plugins/mediaElement/testforfiles.js"></script>	
 <script src="assets/js/global.js"></script>
 
 </body>

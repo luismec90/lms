@@ -1,5 +1,6 @@
-$(function($) {
-    var video = $('#video').get(0);
+$(function() {
+    var player = new MediaElementPlayer('#video');
+
     /*    $("#coverDisplay").css({
      "opacity": "1",
      "width": "100%",
@@ -13,7 +14,7 @@ $(function($) {
             "height": "0"
         });
         $("#contenedor-video").removeClass("class-contenedor-video").addClass("hide");
-        video.load();
+        player.pause();
     });
     $("#botonCerrarPdf").click(function() {
         $("#coverDisplay").css({
@@ -48,9 +49,10 @@ $(function($) {
             "width": "100%",
             "height": "100%"
         });
+
         $("#contenedor-video").addClass("class-contenedor-video").removeClass("hide");
-        video.load();
-        video.play();
+        $("#video").get(0).load();
+        player.play();
     });
     $(".openPdf").click(function() {
         $("#coverDisplay").css({
@@ -58,7 +60,7 @@ $(function($) {
             "width": "100%",
             "height": "100%"
         });
-        var h = $(window).height()-25;
+        var h = $(window).height() - 25;
         var w = $(window).width();
         $("#contenedor-pdf").css("height", h + "px").addClass("class-contenedor-pdf").removeClass("hide");
         $("#pdf,#contenedor-pdf").css({
@@ -66,5 +68,10 @@ $(function($) {
 //            "width": w + "px"
 
         });
+    });
+    $('audio,video').mediaelementplayer({
+        success: function(player, node) {
+            $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+        }
     });
 });
