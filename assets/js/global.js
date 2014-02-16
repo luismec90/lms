@@ -14,11 +14,21 @@ $(function() {
             "height": "0"
         });
         $("#contenedor-pdf").removeClass("class-contenedor-pdf").addClass("hide");
-         $("html, body").css({
+        $("html, body").css({
             'overflow': 'content'
         });
     });
-
+   $("#botonCerrarFrame").click(function() {
+        $("#coverDisplay").css({
+            "opacity": "0",
+            "width": "0",
+            "height": "0"
+        });
+        $("#contenedor-frame").removeClass("class-contenedor-pdf").addClass("hide");
+        $("html, body").css({
+            'overflow': 'content'
+        });
+    });
     //$("#video").appendTo('body');
     // $("#video").css('position', 'fixed').css('width', '100%').css('height', '100%').css('margin', 0).css('margin-top', '0').css('top', '0').css('left', '0').css('float', 'left').css('z-index', 2000);
 
@@ -50,6 +60,24 @@ $(function() {
         var w = $(window).width();
         $("#contenedor-pdf").css("height", h + "px").addClass("class-contenedor-pdf").removeClass("hide");
         $("#pdf,#contenedor-pdf").css({
+            "width": "100%",
+            "height": "100%",
+            "bottom": "0"
+        });
+    });
+    $(".circulo").click(function() {
+        $("#coverDisplay").css({
+            "opacity": "1",
+            "width": "100%",
+            "height": "100%"
+        });
+        $("html, body").css({
+            'overflow': 'hidden'
+        });
+        var h = $(window).height() - 25;
+        var w = $(window).width();
+        $("#contenedor-frame").css("height", h + "px").addClass("class-contenedor-pdf").removeClass("hide");
+        $("#frame,#contenedor-frame").css({
             "width": "100%",
             "height": "100%",
             "bottom": "0"

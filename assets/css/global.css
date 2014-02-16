@@ -76,7 +76,7 @@
     width: 100%;
     height:700px;
 }
-#botonCerrarPdf{
+#botonCerrarPdf,#botonCerrarFrame{
     width:30px;
     height:30px;
     position: absolute;

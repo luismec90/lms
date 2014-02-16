@@ -1,7 +1,7 @@
 API = new Object();
 API.LMSInitialize = function(a) {
     $.ajax({
-        url: "../api/LMSInitialize",
+        url: "api/LMSInitialize",
         method: "post",
         data: {
             param1: a
@@ -13,7 +13,7 @@ API.LMSInitialize = function(a) {
 }
 API.LMSFinish = function(a) {
     $.ajax({
-        url: "../api/LMSFinish",
+        url: "api/LMSFinish",
         method: "post",
         data: {
             param1: a
@@ -25,7 +25,7 @@ API.LMSFinish = function(a) {
 }
 API.LMSSetValue = function(a, b) {
     $.ajax({
-        url: "../api/LMSSetValue",
+        url: "api/LMSSetValue",
         method: "post",
         data: {
             param1: a,
