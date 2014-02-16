@@ -200,10 +200,10 @@
         text-shadow:0px 0px 20px #eee;
         height: 150px;
           -webkit-transform: rotate(360deg);  /* Chrome, Safari 3.1+ */
-     -moz-transform: rotate(100deg);  /* Firefox 3.5-15 */
-      -ms-transform: rotate(7.5deg);  /* IE 9 */
-       -o-transform: rotate(7.5deg);  /* Opera 10.50-12.00 */
-          transform: rotate(7.5deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+     -moz-transform: rotate(360deg);  /* Firefox 3.5-15 */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+       -o-transform: rotate(360deg);  /* Opera 10.50-12.00 */
+          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
           background: #2c7659;
           
     }

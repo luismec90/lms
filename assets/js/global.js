@@ -6,7 +6,7 @@ $(function() {
      "height": "100%"
      });
      $("#contenedor-video").addClass("class-contenedor-video");*/
-  
+
     $("#botonCerrarPdf").click(function() {
         $("#coverDisplay").css({
             "opacity": "0",
@@ -14,6 +14,9 @@ $(function() {
             "height": "0"
         });
         $("#contenedor-pdf").removeClass("class-contenedor-pdf").addClass("hide");
+         $("html, body").css({
+            'overflow': 'content'
+        });
     });
 
     //$("#video").appendTo('body');
@@ -40,14 +43,16 @@ $(function() {
             "width": "100%",
             "height": "100%"
         });
+        $("html, body").css({
+            'overflow': 'hidden'
+        });
         var h = $(window).height() - 25;
         var w = $(window).width();
         $("#contenedor-pdf").css("height", h + "px").addClass("class-contenedor-pdf").removeClass("hide");
         $("#pdf,#contenedor-pdf").css({
-            "height": h + "px"
-//            "width": w + "px"
-
+            "width": "100%",
+            "height": "100%",
+            "bottom": "0"
         });
     });
-  
 });

@@ -66,9 +66,8 @@
     width: 960px;
     height:700px;
     position: fixed;
-    top:20px;
-    left: 50%;
-    margin-left:-480px;
+    top:0;
+    left:0;
     z-index: 1600;
     display: block;
 }
@@ -88,8 +87,6 @@
     padding: 1.5px 0 0 4.5px;
     background: #222;
     color:grey;
-    margin-right:-20px;
-    margin-top:-20px;
 }
 #botonCerrarPdf:hover{
     color:whitesmoke;
