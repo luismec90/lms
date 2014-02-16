@@ -58,8 +58,13 @@ $(function($) {
             "width": "100%",
             "height": "100%"
         });
-        var h = $(window).height()-30;
+        var h = $(window).height()-25;
+        var w = $(window).width();
         $("#contenedor-pdf").css("height", h + "px").addClass("class-contenedor-pdf").removeClass("hide");
-        $("#pdf").css("height", h + "px");
+        $("#pdf,#contenedor-pdf").css({
+            "height": h + "px"
+//            "width": w + "px"
+
+        });
     });
 });
