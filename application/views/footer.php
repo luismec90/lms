@@ -4,17 +4,8 @@
 </div><!-- /.main-content -->
 <div id="coverDisplay">
 </div>
-<!-- basic scripts -->
-<!--[if !IE]> -->
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
-</script>
-<!-- <![endif]-->
-<!--[if IE]>
-<script type="text/javascript">
-window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
+
+<script src="assets/plugins/jQuery/jQuery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- page specific plugin scripts -->
 <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -24,6 +15,9 @@ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+
 <script src="assets/plugins/mediaElement/mediaelement-and-player.js"></script>
 <script src="assets/plugins/mediaElement/testforfiles.js"></script>	
 <script src="assets/js/global.js"></script>
+<?php if($tab=="videos") {?>
+<script src="assets/js/videos.js"></script>
+<?php } ?>
 
 </body>
 </html>

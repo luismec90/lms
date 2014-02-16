@@ -1,5 +1,4 @@
 $(function() {
-    var player = new MediaElementPlayer('#video');
 
     /*    $("#coverDisplay").css({
      "opacity": "1",
@@ -7,15 +6,7 @@ $(function() {
      "height": "100%"
      });
      $("#contenedor-video").addClass("class-contenedor-video");*/
-    $("#botonCerrarVideo").click(function() {
-        $("#coverDisplay").css({
-            "opacity": "0",
-            "width": "0",
-            "height": "0"
-        });
-        $("#contenedor-video").removeClass("class-contenedor-video").addClass("hide");
-        player.pause();
-    });
+  
     $("#botonCerrarPdf").click(function() {
         $("#coverDisplay").css({
             "opacity": "0",
@@ -23,7 +14,6 @@ $(function() {
             "height": "0"
         });
         $("#contenedor-pdf").removeClass("class-contenedor-pdf").addClass("hide");
-        video.load();
     });
 
     //$("#video").appendTo('body');
@@ -43,17 +33,7 @@ $(function() {
             size: 75
         }).css('color', $(this).data('color'));
     });
-    $(".openVideo").click(function() {
-        $("#coverDisplay").css({
-            "opacity": "1",
-            "width": "100%",
-            "height": "100%"
-        });
 
-        $("#contenedor-video").addClass("class-contenedor-video").removeClass("hide");
-        $("#video").get(0).load();
-        player.play();
-    });
     $(".openPdf").click(function() {
         $("#coverDisplay").css({
             "opacity": "1",
@@ -69,9 +49,5 @@ $(function() {
 
         });
     });
-    $('audio,video').mediaelementplayer({
-        success: function(player, node) {
-            $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
-        }
-    });
+  
 });
