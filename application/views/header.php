@@ -317,20 +317,56 @@
                                 <span class="menu-text"> Información del curso </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="typography.html">
+                        <li class="<?= ($tab == "contenido") ? "active open" : "" ?>">
+                            <a href="#" class="dropdown-toggle">
                                 <i class="icon-position fa fa-th-list fa-lg"></i>
                                 <span class="menu-text"> Contenido </span>
+
+                                <b class="arrow fa fa-angle-down"></b>
                             </a>
+
+                            <ul class="submenu">
+                                <li class="<?= ($tab == "contenido") ? "active" : "" ?>">
+                                    <a href="contenido">
+                                        <i class="icon-position fa fa-angle-double-right"></i>
+                                        Limites
+                                    </a>
+                                </li>
+                                <li class="<?= ($tab == "") ? "active" : "" ?>">
+                                    <a href="contenido">
+                                        <i class="icon-position fa fa-angle-double-right"></i>
+                                        Derivadas
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                         <li class="<?= ($tab == "recursos") ? "active" : "" ?>">
-                            <a href="recursos">
-                            <i class="icon-position fa fa-briefcase fa-lg"></i>
+                        <li class="<?= ($tab == "videos" || $tab == "textFiles" ) ? "active open" : "" ?>">
+                            <a href="#" class="dropdown-toggle">
+                                <i class="icon-position fa fa-briefcase fa-lg"></i>
                                 <span class="menu-text"> Recursos </span>
+
+                                <b class="arrow fa fa-angle-down"></b>
                             </a>
+
+                            <ul class="submenu">
+                                <li class="<?= ($tab == "videos") ? "active" : "" ?>">
+                                    <a href="videos">
+                                        <i class="icon-position fa fa-angle-double-right"></i>
+                                        <i class="icon-position fa fa-play-circle-o fa-lg"></i> 
+                                        Videos
+                                    </a>
+                                </li>
+                                <li class="<?= ($tab == "textFiles") ? "active" : "" ?>">
+                                    <a href="textFiles">
+                                        <i class="icon-position fa fa-angle-double-right"></i>
+                                        <i class="icon-position fa fa-file-text fa-lg"></i> 
+                                        PDFs
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="typography.html">
+                         <li class="<?= ($tab == "evaluaciones") ? "active" : "" ?>">
+                            <a href="evaluaciones">
                                 <i class="icon-position fa fa-rocket fa-lg"></i>
                                 <span class="menu-text"> Evaluaciones </span>
                             </a>
