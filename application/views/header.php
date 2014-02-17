@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Dashboard - Ace Admin</title>
+        <title>Plataforma Educativa</title>
         <meta name="description" content="overview &amp; stats" />
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/font-awesome.css" />

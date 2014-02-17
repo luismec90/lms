@@ -2,7 +2,7 @@
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo solved">
-                <i class="fa fa-check fa-3x"></i> 
+                <i class="fa fa-check fa-2x"></i> 
                 <h1>1</h1>
             </div>
             <h2>Prueba 1
@@ -16,8 +16,8 @@
     </div>
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
-            <div class="circulo ">
-                <i class="fa fa-unlock fa-3x"></i> 
+            <div class="circulo open">
+                <i class="fa fa-unlock fa-2x"></i> 
                 <h1>2</h1>
             </div>
             <h2>Prueba 2
@@ -32,7 +32,7 @@
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+                <i class="fa fa-lock fa-2x"></i> 
                 <h1>3</h1>
             </div>
             <h2>Prueba 3
@@ -47,23 +47,23 @@
 
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
-            <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+            <div class="circulo open">
+                <i class="fa fa-unlock fa-2x"></i> 
                 <h1>4</h1>
             </div>
             <h2>Prueba 4
             </h2>
             <b>Objetivo</b>: En esta prueba consta de 5 preguntas conceptuales y 5 ejercicios de lí mites <br>
             <br>
-            <span class="text-danger"> <b>Prerequisito: 20 puntos</b></span>
+            <span class="text-danger"> <b>Prerequisito: 10 puntos</b></span>
             <br><br>
 <!--            <span class="text-success"> <b>Calificación: 10 puntos</b></span>-->
         </div>
     </div>
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
-            <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+            <div class="circulo solved">
+                <i class="fa fa-check fa-2x"></i> 
                 <h1>5</h1>
             </div>
             <h2>Prueba 5
@@ -71,14 +71,14 @@
             <b>Objetivo</b>: En esta prueba consta de 5 preguntas conceptuales y 5 ejercicios de lí mites <br>
             <br>
             <span class="text-danger"> <b>Prerequisito: 20 puntos</b></span>
-            <br><br>
-<!--            <span class="text-success"> <b>Calificación: 10 puntos</b></span>-->
+            <br>
+            <span class="text-success"> <b>Calificación: 10 puntos</b></span>
         </div>
     </div>
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+                <i class="fa fa-lock fa-2x"></i> 
                 <h1>6</h1>
             </div>
             <h2>Prueba 6
@@ -96,7 +96,7 @@
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+                <i class="fa fa-lock fa-2x"></i> 
                 <h1>7</h1>
             </div>
             <h2>Prueba 7
@@ -111,7 +111,7 @@
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+                <i class="fa fa-lock fa-2x"></i> 
                 <h1>8</h1>
             </div>
             <h2>Prueba 8
@@ -126,7 +126,7 @@
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
             <div class="circulo ">
-                <i class="fa fa-lock fa-3x"></i> 
+                <i class="fa fa-lock fa-2x"></i> 
                 <h1>9</h1>
             </div>
             <h2>Prueba 9
@@ -156,10 +156,11 @@
         min-height:100px;
     }
     .circulo{
+        margin-top: 30px;
         background: #3bb6e6;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         text-align:center;
         color:#555;
         font-size: 15px;
@@ -176,21 +177,22 @@
         text-rendering: optimizeLegibility;
     }
     .solved{
-        opacity: 0.7;
+        opacity: 1;
+        background: #A1DCF3;
     }
     .circulo .fa-lock{
         position: relative;
-        margin-right: -110px;
+        margin-right: -60px;
         color:#444;
     }
     .circulo .fa-unlock{
         position: relative;
-        margin-right: -110px;
+        margin-right: -60px;
         color:#444;
     }
     .circulo .fa-check{
         position: relative;
-        margin-right: -110px;
+          margin-right: -60px;
         color:#2F895E;
         z-index: 200;
     }
@@ -198,11 +200,11 @@
 
     }
     .circulo h1{
-        font-size: 100px;
+        font-size: 50px;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 3px;
     }
-    .circulo:hover {
+    .contenedorEjercicio .solved:hover, .contenedorEjercicio .open:hover {
         color:white;
         text-shadow: 0 0 1px #666;
         text-decoration: none;
@@ -216,7 +218,12 @@
         -o-transform: rotate(360deg);  /* Opera 10.50-12.00 */
         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
         background: #2c7659;
-
+   width: 115px;
+        height: 115px;
+        padding: 0;
+        margin: 0;
+          margin-top: 25px;
+          margin-right: -10px;
     }
 
 </style>

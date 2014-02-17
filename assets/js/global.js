@@ -65,7 +65,7 @@ $(function() {
             "bottom": "0"
         });
     });
-    $(".circulo").click(function() {
+    $(".solved,.open").click(function() {
         $("#coverDisplay").css({
             "opacity": "1",
             "width": "100%",
