@@ -62,7 +62,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
-                                            <span class="pull-left">Software Update</span>
+                                            <span class="pull-left">Actividad 1</span>
                                             <span class="pull-right">65%</span>
                                         </div>
 
@@ -75,7 +75,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
-                                            <span class="pull-left">Hardware Upgrade</span>
+                                            <span class="pull-left">Actividad 2</span>
                                             <span class="pull-right">35%</span>
                                         </div>
 
@@ -88,7 +88,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
-                                            <span class="pull-left">Unit Testing</span>
+                                            <span class="pull-left">Actividad 3</span>
                                             <span class="pull-right">15%</span>
                                         </div>
 
@@ -101,7 +101,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="clearfix">
-                                            <span class="pull-left">Bug Fixes</span>
+                                            <span class="pull-left">Actividad 4</span>
                                             <span class="pull-right">90%</span>
                                         </div>
 
@@ -114,7 +114,7 @@
                                 <li>
                                     <a href="#">
                                         Ver las actividades pendientes
-                                        <i class="icon-arrow-right"></i>
+                                        <i class="icon-arrow-right fa fa-arrow-right"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -136,8 +136,8 @@
                                     <a href="#">
                                         <div class="clearfix">
                                             <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-pink icon-comment"></i>
-                                                New Comments
+                                                <i class="btn btn-xs no-hover btn-pink fa fa-comment-o"></i>
+                                                Nuevos comentarios
                                             </span>
                                             <span class="pull-right badge badge-info">+12</span>
                                         </div>
@@ -146,39 +146,15 @@
 
                                 <li>
                                     <a href="#">
-                                        <i class="btn btn-xs btn-primary icon-user"></i>
-                                        Bob just signed up as an editor ...
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
-                                                New Orders
-                                            </span>
-                                            <span class="pull-right badge badge-success">+8</span>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-info icon-twitter"></i>
-                                                Followers
-                                            </span>
-                                            <span class="pull-right badge badge-info">+11</span>
-                                        </div>
+                                        <i class="btn btn-xs btn-primary fa fa-film"></i>
+                                        Nuevo video disponible
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
                                         Ver todas las notificaciones
-                                        <i class="icon-arrow-right"></i>
+                                        <i class="icon-arrow-right fa fa-arrow-right"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -201,13 +177,13 @@
                                         <img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
                                         <span class="msg-body">
                                             <span class="msg-title">
-                                                <span class="blue">Alex:</span>
-                                                Ciao sociis natoque penatibus et auctor ...
+                                                <span class="blue">Andres:</span>
+                                                Hola mundo...
                                             </span>
 
                                             <span class="msg-time">
                                                 <i class="icon-time"></i>
-                                                <span>a moment ago</span>
+                                                <span>hace un momento</span>
                                             </span>
                                         </span>
                                     </a>
@@ -218,25 +194,25 @@
                                         <img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
                                         <span class="msg-body">
                                             <span class="msg-title">
-                                                <span class="blue">Susan:</span>
-                                                Vestibulum id ligula porta felis euismod ...
+                                                <span class="blue">Laura:</span>
+
                                             </span>
 
                                             <span class="msg-time">
                                                 <i class="icon-time"></i>
-                                                <span>20 minutes ago</span>
-                                            </span>
+                                                <span>hace 20 minutes </span>
+                                            </span>Hola mundo...
                                         </span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
-                                        <img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+                                        <img src="assets/avatars/avatar4.png" class="msg-photo" alt="" />
                                         <span class="msg-body">
                                             <span class="msg-title">
-                                                <span class="blue">Bob:</span>
-                                                Nullam quis risus eget urna mollis ornare ...
+                                                <span class="blue">Julian:</span>
+                                                Hola mundo...
                                             </span>
 
                                             <span class="msg-time">
@@ -250,7 +226,7 @@
                                 <li>
                                     <a href="inbox.html">
                                         Ver todos los mensajes
-                                        <i class="icon-arrow-right"></i>
+                                        <i class="icon-arrow-right fa fa-arrow-right"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -356,14 +332,12 @@
                                 <li class="<?= ($tab == "videos") ? "active" : "" ?>">
                                     <a href="videos">
                                         <i class="icon-position fa fa-angle-double-right"></i>
-                                        <i class="icon-position fa fa-play-circle-o fa-lg"></i> 
                                         Videos
                                     </a>
                                 </li>
                                 <li class="<?= ($tab == "textFiles") ? "active" : "" ?>">
                                     <a href="textFiles">
                                         <i class="icon-position fa fa-angle-double-right"></i>
-                                        <i class="icon-position fa fa-file-text fa-lg"></i> 
                                         PDFs
                                     </a>
                                 </li>
@@ -377,32 +351,14 @@
                         </li>
 
 
-                        <li>
-                            <a href="#" class="dropdown-toggle">
-                                <i class="icon-position fa fa-comments-o fa-lg"></i>
+
+
+                        <li class="<?= ($tab == "anuncios") ? "active" : "" ?>">
+                            <a href="anuncios">
+                                <i class="icon-position fa fa-comments fa-lg"></i>
                                 <span class="menu-text"> Foro </span>
-
-                                <b class="arrow icon-angle-down"></b>
                             </a>
-
-                            <ul class="submenu">
-                                <li>
-                                    <a href="tables.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Simple &amp; Dynamic
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="jqgrid.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        jqGrid plugin
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-
-
 
 
 
@@ -412,49 +368,42 @@
                                 <i class="icon-position fa fa-globe fa-lg"></i>
                                 <span class="menu-text"> Recursos externos </span>
 
-                                <b class="arrow icon-angle-down"></b>
+                               <b class="arrow fa fa-angle-down"></b>
                             </a>
 
                             <ul class="submenu">
                                 <li>
                                     <a href="profile.html">
                                         <i class="icon-double-angle-right"></i>
-                                        User Profile
+                                        Link 1
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="inbox.html">
                                         <i class="icon-double-angle-right"></i>
-                                        Inbox
+                                        Link 2
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="pricing.html">
                                         <i class="icon-double-angle-right"></i>
-                                        Pricing Tables
+                                        Link 3
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="invoice.html">
                                         <i class="icon-double-angle-right"></i>
-                                        Invoice
+                                        Link 4
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="timeline.html">
                                         <i class="icon-double-angle-right"></i>
-                                        Timeline
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="login.html">
-                                        <i class="icon-double-angle-right"></i>
-                                        Login &amp; Register
+                                        Link 5
                                     </a>
                                 </li>
                             </ul>

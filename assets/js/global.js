@@ -47,7 +47,7 @@ $(function() {
         }).css('color', $(this).data('color'));
     });
 
-    $(".openPdf").click(function() {
+    $(".abrirPdf").click(function() {
         $("#coverDisplay").css({
             "opacity": "1",
             "width": "100%",
