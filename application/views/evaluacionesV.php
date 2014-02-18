@@ -1,3 +1,4 @@
+
 <div class="row">
     <div class="contenedorEjercicio col-lg-4 col-sm-6">
         <div class="well">
@@ -145,9 +146,9 @@
     <div id="botonCerrarFrame">
         <i class="fa fa-times fa-2x"></i> 
     </div>
-  <iframe width="100%" id="frame" src="resources/integralTest/content/launch.html" height="90%"></iframe>
-        <script src="assets/plugins/jQuery/jQuery.js"></script>
-        <script src="assets/js/api.js"></script>
+    <iframe width="100%" id="frame" src="resources/integralTest/content/launch.html" height="90%"></iframe>
+    <script src="assets/plugins/jQuery/jQuery.js"></script>
+    <script src="assets/js/api.js"></script>
 </div>
 
 
@@ -192,7 +193,7 @@
     }
     .circulo .fa-check{
         position: relative;
-          margin-right: -60px;
+        margin-right: -60px;
         color:#2F895E;
         z-index: 200;
     }
@@ -218,12 +219,12 @@
         -o-transform: rotate(360deg);  /* Opera 10.50-12.00 */
         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
         background: #2c7659;
-   width: 115px;
+        width: 115px;
         height: 115px;
         padding: 0;
         margin: 0;
-          margin-top: 25px;
-          margin-right: -10px;
+        margin-top: 25px;
+        margin-right: -10px;
     }
 
 </style>

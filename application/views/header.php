@@ -353,8 +353,8 @@
 
 
 
-                        <li class="<?= ($tab == "anuncios") ? "active" : "" ?>">
-                            <a href="anuncios">
+                        <li class="<?= ($tab == "foro") ? "active" : "" ?>">
+                            <a href="foro">
                                 <i class="icon-position fa fa-comments fa-lg"></i>
                                 <span class="menu-text"> Foro </span>
                             </a>
@@ -368,7 +368,7 @@
                                 <i class="icon-position fa fa-globe fa-lg"></i>
                                 <span class="menu-text"> Recursos externos </span>
 
-                               <b class="arrow fa fa-angle-down"></b>
+                                <b class="arrow fa fa-angle-down"></b>
                             </a>
 
                             <ul class="submenu">
@@ -427,5 +427,12 @@
                                         <?= $tab ?>
                                     </small>
                                 <?php } ?>
+                               
+                                <div id="graficaAvance" class="pull-left">
+                                    <div class="easy-pie-chart percentage easyPieChart" data-percent="90" data-color="#87B87F" style="width: 40; height: 40; line-height: 40; color: rgb(135, 184, 127);">
+                                        <span class="percent">90</span>%
+                                        </div>
+                                </div>
+                              
                             </h1>
                         </div><!-- /.page-header -->
