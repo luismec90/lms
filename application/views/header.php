@@ -354,7 +354,7 @@
 
 
                         <li class="<?= ($tab == "foro") ? "active" : "" ?>">
-                            <a href="foro">
+                            <a href="anuncios">
                                 <i class="icon-position fa fa-comments fa-lg"></i>
                                 <span class="menu-text"> Foro </span>
                             </a>
