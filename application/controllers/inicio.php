@@ -9,7 +9,7 @@ class Inicio extends CI_Controller {
         $data = array();
         $this->loadData($data);
         $this->load->view('header',$data);
-        $this->load->view('iniciov');
+      //  $this->load->view('iniciov');
         $this->load->view('footer');
     }
 
